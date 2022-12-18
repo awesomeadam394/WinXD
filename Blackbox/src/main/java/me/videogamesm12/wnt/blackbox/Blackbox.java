@@ -80,13 +80,13 @@ public class Blackbox extends Thread implements ModInitializer, ClientLifecycleE
                         + "interest of maintaining client stability, it has been disabled.");
                 return;
             }
-            case LINUX, OSX ->
-            {
-                WNT.getLogger().warn("The Blackbox is known to cause crashes with clients running on this operating "
-                        + "system due to a strange issue with how Java behaves with it. As such, it has been disabled "
-                        + "in the interest of maintaining client stability.");
-                return;
-            }
+//            case LINUX, OSX ->
+//            {
+//                WNT.getLogger().warn("The Blackbox is known to cause crashes with clients running on this operating "
+//                        + "system due to a strange issue with how Java behaves with it. As such, it has been disabled "
+//                        + "in the interest of maintaining client stability.");
+//                return;
+//            }
         }
 
         System.setProperty("java.awt.headless", "false");
